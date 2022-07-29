@@ -9,7 +9,9 @@ class TestStringMethods(unittest.TestCase):
   def test__new_isupper(self):
       self.assertTrue('FOO'.isupper())
       self.assertFalse('Foo'.isupper())
-
+  def test__new_isupperNew(self):
+      self.assertTrue(1 == 2)
+      self.assertFalse('Foo'.isupper())
   def test_new_split(self):
       s = 'hello world'
       self.assertEqual(s.split(), ['hello', 'world'])

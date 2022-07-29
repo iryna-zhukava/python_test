@@ -15,7 +15,9 @@ class MyTestCase(unittest.TestCase):
         # Проверим, что s.split не работает, если разделитель - не строка
         with self.assertRaises(TypeError):
             s.split(2)
-
+  def test__new_isupperNew(self):
+      self.assertTrue(1 == 2)
+      self.assertFalse('Foo'.isupper())
 
 if __name__ == '__main__':
     unittest.main()
